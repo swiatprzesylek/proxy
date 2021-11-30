@@ -6,7 +6,7 @@ const cors = require('cors');
 const fs = require('fs');
 const https = require('https');
 const path = require('path');
-const port = process.env.PORT || 3000;
+const port = process.env.SERVER_PORT || 3000;
 
 
 app.use(cors());

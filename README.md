@@ -40,7 +40,7 @@ You can quickly use a generated self-signed certificate. Just pass `ENABLE_HTTPS
 
 ## Change port
 
-By default proxy is listening on port `3000`. To change this value pass `PORT` environment variable
+By default proxy is listening on port `3000`. To change this value pass `SERVER_PORT` environment variable
 
 ```yaml
         services:
@@ -48,7 +48,7 @@ By default proxy is listening on port `3000`. To change this value pass `PORT` e
             image: swiatprzesylek/proxy
             environment:
               - TARGET_DOMAIN=https://google.com
-              - PORT=3001
+              - SERVER_PORT=3001
 ```
 
 ## Issues
