@@ -2,7 +2,7 @@
 
 [![Software License][ico-license]](LICENSE.md)
 
-A docker image to proxy outside requests to local network with https support. 
+A [docker image](https://hub.docker.com/r/swiatprzesylek/proxy) to proxy outside requests to local network with https support. 
 
 
 ## Basic usage
@@ -23,7 +23,6 @@ Run this command above to proxy google.com to your localhost:3000.
             image: swiatprzesylek/proxy
             environment:
               - TARGET_DOMAIN=https://google.com
-
 ```
 
 ## SSL support
@@ -37,7 +36,6 @@ You can quickly use a generated self-signed certificate. Just pass `ENABLE_HTTPS
             environment:
               - TARGET_DOMAIN=https://google.com
               - ENABLE_HTTPS=1
-
 ```
 
 ## Change port
@@ -51,7 +49,6 @@ By default proxy is listening on port `3000`. To change this value pass `PORT` e
             environment:
               - TARGET_DOMAIN=https://google.com
               - PORT=3001
-
 ```
 
 ## Issues
